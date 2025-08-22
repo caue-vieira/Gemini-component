@@ -51,7 +51,7 @@ export async function generate(options: Options): Promise<GenerateResult> {
                 }
                 return finalContent;
             } catch(error) {
-                throw new Error("There was an error while processing the prompt");
+                throw new Error(`There was an error while processing the prompt: ${error}`);
             }
         }
         case "summarize": {
@@ -150,7 +150,7 @@ export async function generate(options: Options): Promise<GenerateResult> {
 
                 return activityResult;
             } catch(error) {
-                throw new Error("There was an error while processing the prompt");
+                throw new Error(`There was an error while processing the prompt: ${error}`);
             }
         }
         default:
