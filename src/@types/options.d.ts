@@ -10,7 +10,6 @@ declare module "generate-options" {
             length: "short"|"medium"|"long",
             targetAudience?: "beginner"|"intermediate"|"advanced",
         },
-        questionAmount?: number,
     }
 
     interface ActivityOptions extends BaseOptions {
